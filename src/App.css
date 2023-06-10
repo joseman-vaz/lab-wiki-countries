@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+li.list-group-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img-top {
+  margin: 10px auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.details.card.m-3 {
+  align-items: center;
+  width: 30%;
+}
