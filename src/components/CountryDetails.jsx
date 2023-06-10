@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function CountryDetails({ countries }) {
   const { alpha3Code } = useParams();
@@ -24,6 +25,9 @@ function CountryDetails({ countries }) {
         <p>Official Name: {country.name.official}</p>
         <p>Capital: {country.capital}</p>
         <p>Subregion: {country.subregion}</p>
+        <Link to="/" className="btn btn-info mb-3 ">
+          Go Back
+        </Link>
       </div>
     </div>
   );
